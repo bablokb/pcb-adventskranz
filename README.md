@@ -1,7 +1,7 @@
 Einfache Platine für einen Adventskranz mit vier LEDs
 =====================================================
 
-![](pcb-3D.png)
+![](pcb-3d.png)
 
 Die Platine ist eine leichte Lötübung mit vier LEDs, vier
 Vorwiderständen und einem Button.
