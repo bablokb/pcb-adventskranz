@@ -1,0 +1,208 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "pcb-adventskranz"
+Date "2021-07-13"
+Rev "1.0"
+Comp "Bernhard Bablok"
+Comment1 "https://github.com/bablokb/pcb-adventskranz"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 60E9A1E9
+P 5700 2500
+F 0 "D1" H 5693 2717 50  0000 C CNN
+F 1 "LED" H 5693 2626 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5700 2500 50  0001 C CNN
+F 3 "~" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60E9AA1A
+P 5150 2500
+F 0 "R1" V 4943 2500 50  0000 C CNN
+F 1 "680Ω" V 5034 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5080 2500 50  0001 C CNN
+F 3 "~" H 5150 2500 50  0001 C CNN
+	1    5150 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60E9BF3D
+P 5150 4200
+F 0 "SW1" H 5150 4485 50  0000 C CNN
+F 1 "SW_Push" H 5150 4394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5150 4400 50  0001 C CNN
+F 3 "~" H 5150 4400 50  0001 C CNN
+	1    5150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 60E9C925
+P 6300 4550
+F 0 "J1" V 6454 4162 50  0000 R CNN
+F 1 "Conn_01x06_Male" V 6363 4162 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6300 4550 50  0001 C CNN
+F 3 "~" H 6300 4550 50  0001 C CNN
+	1    6300 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 2500 5550 2500
+$Comp
+L Device:LED D2
+U 1 1 60E9E3FC
+P 5700 2900
+F 0 "D2" H 5693 3117 50  0000 C CNN
+F 1 "LED" H 5693 3026 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5700 2900 50  0001 C CNN
+F 3 "~" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60E9E402
+P 5150 2900
+F 0 "R2" V 4943 2900 50  0000 C CNN
+F 1 "680Ω" V 5034 2900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5080 2900 50  0001 C CNN
+F 3 "~" H 5150 2900 50  0001 C CNN
+	1    5150 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2900 5550 2900
+$Comp
+L Device:LED D3
+U 1 1 60E9E989
+P 5700 3300
+F 0 "D3" H 5693 3517 50  0000 C CNN
+F 1 "LED" H 5693 3426 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5700 3300 50  0001 C CNN
+F 3 "~" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60E9E98F
+P 5150 3300
+F 0 "R3" V 4943 3300 50  0000 C CNN
+F 1 "680Ω" V 5034 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5080 3300 50  0001 C CNN
+F 3 "~" H 5150 3300 50  0001 C CNN
+	1    5150 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3300 5550 3300
+$Comp
+L Device:LED D4
+U 1 1 60E9F439
+P 5700 3700
+F 0 "D4" H 5693 3917 50  0000 C CNN
+F 1 "LED" H 5693 3826 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5700 3700 50  0001 C CNN
+F 3 "~" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60E9F43F
+P 5150 3700
+F 0 "R4" V 4943 3700 50  0000 C CNN
+F 1 "680Ω" V 5034 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5080 3700 50  0001 C CNN
+F 3 "~" H 5150 3700 50  0001 C CNN
+	1    5150 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3700 5550 3700
+Wire Wire Line
+	5000 2500 4750 2500
+Wire Wire Line
+	4750 2500 4750 2900
+Wire Wire Line
+	4750 4350 5100 4350
+Wire Wire Line
+	5000 2900 4750 2900
+Connection ~ 4750 2900
+Wire Wire Line
+	4750 2900 4750 3300
+Wire Wire Line
+	5000 3300 4750 3300
+Connection ~ 4750 3300
+Wire Wire Line
+	4750 3300 4750 3700
+Wire Wire Line
+	5000 3700 4750 3700
+Connection ~ 4750 3700
+Wire Wire Line
+	4750 3700 4750 4200
+Wire Wire Line
+	5850 3700 6300 3700
+Wire Wire Line
+	6300 3700 6300 4350
+Wire Wire Line
+	5850 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 4350
+Wire Wire Line
+	5850 2900 6500 2900
+Wire Wire Line
+	6500 2900 6500 4350
+Wire Wire Line
+	5850 2500 6600 2500
+Wire Wire Line
+	6600 2500 6600 4350
+Wire Wire Line
+	5350 4200 6200 4200
+Wire Wire Line
+	6200 4200 6200 4350
+Wire Wire Line
+	4950 4200 4750 4200
+Connection ~ 4750 4200
+Wire Wire Line
+	4750 4200 4750 4350
+$Comp
+L power:GND #PWR0101
+U 1 1 60ED92E4
+P 5450 4350
+F 0 "#PWR0101" H 5450 4100 50  0001 C CNN
+F 1 "GND" H 5455 4177 50  0000 C CNN
+F 2 "" H 5450 4350 50  0001 C CNN
+F 3 "" H 5450 4350 50  0001 C CNN
+	1    5450 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 4350
+Wire Wire Line
+	5450 4350 6100 4350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60EDA0CD
+P 5100 4350
+F 0 "#FLG0101" H 5100 4425 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 4523 50  0000 C CNN
+F 2 "" H 5100 4350 50  0001 C CNN
+F 3 "~" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	-1   0    0    1   
+$EndComp
+Connection ~ 5100 4350
+Wire Wire Line
+	5100 4350 5450 4350
+$EndSCHEMATC
