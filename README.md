@@ -6,9 +6,10 @@ Einfache Platine für einen Adventskranz mit vier LEDs
 Die Platine ist eine leichte Lötübung mit vier LEDs, vier
 Vorwiderständen und einem Button.
 
-Die Steuerung erfolgt über einen Mikrokontroller oder
-Raspberry Pi, ein entsprechender Anschluss ist ebenfalls
-vorhanden.
+Die Steuerung erfolgt hier (Branch `pic`) über einen
+PIC-Mikrokontroller. Varianten für andere MCUs sind
+einfach möglich und betreffen nur die Verdrahtung
+der Pins.
 
 
 Schaltung und Layout

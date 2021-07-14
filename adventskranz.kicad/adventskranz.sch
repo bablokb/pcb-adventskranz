@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "pcb-adventskranz"
-Date "2021-07-13"
-Rev "1.0"
+Title "pcb-adventskranz (PIC-Version)"
+Date "2021-07-14"
+Rev "2.1"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-adventskranz"
-Comment2 ""
+Comment2 "(branch pic)"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -47,12 +47,12 @@ F 3 "~" H 5150 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J1
+L Connector:Conn_01x02_Male J1
 U 1 1 60E9C925
 P 6300 4550
-F 0 "J1" V 6454 4162 50  0000 R CNN
-F 1 "Conn_01x06_Male" V 6363 4162 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6300 4550 50  0001 C CNN
+F 0 "J1" V 6150 4550 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 6050 4750 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 4550 50  0001 C CNN
 F 3 "~" H 6300 4550 50  0001 C CNN
 	1    6300 4550
 	0    -1   -1   0   
@@ -153,26 +153,6 @@ Connection ~ 4750 3700
 Wire Wire Line
 	4750 3700 4750 4200
 Wire Wire Line
-	5850 3700 6300 3700
-Wire Wire Line
-	6300 3700 6300 4350
-Wire Wire Line
-	5850 3300 6400 3300
-Wire Wire Line
-	6400 3300 6400 4350
-Wire Wire Line
-	5850 2900 6500 2900
-Wire Wire Line
-	6500 2900 6500 4350
-Wire Wire Line
-	5850 2500 6600 2500
-Wire Wire Line
-	6600 2500 6600 4350
-Wire Wire Line
-	5350 4200 6200 4200
-Wire Wire Line
-	6200 4200 6200 4350
-Wire Wire Line
 	4950 4200 4750 4200
 Connection ~ 4750 4200
 Wire Wire Line
@@ -189,8 +169,6 @@ F 3 "" H 5450 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5450 4350
-Wire Wire Line
-	5450 4350 6100 4350
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 60EDA0CD
@@ -205,4 +183,112 @@ $EndComp
 Connection ~ 5100 4350
 Wire Wire Line
 	5100 4350 5450 4350
+$Comp
+L MCU_Microchip_PIC12:PIC12F675-IP U1
+U 1 1 60EEA746
+P 7600 3250
+F 0 "U1" H 7600 4100 50  0000 C CNN
+F 1 "PIC12F675-IP" H 7600 4000 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 8200 3900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41190G.pdf" H 7600 3250 50  0001 C CNN
+	1    7600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60EED385
+P 8250 2650
+F 0 "C1" V 7998 2650 50  0000 C CNN
+F 1 "C" V 8089 2650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8288 2500 50  0001 C CNN
+F 3 "~" H 8250 2650 50  0001 C CNN
+	1    8250 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60EEE0B7
+P 8400 2650
+F 0 "#PWR02" H 8400 2400 50  0001 C CNN
+F 1 "GND" V 8400 2450 50  0000 C CNN
+F 2 "" H 8400 2650 50  0001 C CNN
+F 3 "" H 8400 2650 50  0001 C CNN
+	1    8400 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 2650 8100 2650
+$Comp
+L power:GND #PWR01
+U 1 1 60EEF047
+P 7600 3850
+F 0 "#PWR01" H 7600 3600 50  0001 C CNN
+F 1 "GND" H 7750 3800 50  0000 C CNN
+F 2 "" H 7600 3850 50  0001 C CNN
+F 3 "" H 7600 3850 50  0001 C CNN
+	1    7600 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8200 3150
+Wire Wire Line
+	7000 2500 7000 3150
+Wire Wire Line
+	5850 2500 7000 2500
+Wire Wire Line
+	5850 2900 6850 2900
+Wire Wire Line
+	5850 3300 6700 3300
+Wire Wire Line
+	7000 3700 7000 4100
+Wire Wire Line
+	7000 4100 8450 4100
+Wire Wire Line
+	8450 4100 8450 3350
+Wire Wire Line
+	8450 3350 8200 3350
+Wire Wire Line
+	5850 3700 7000 3700
+Wire Wire Line
+	5450 4350 6300 4350
+Text Label 7100 4350 0    50   ~ 0
+Vdd
+Text Label 7450 2650 2    50   ~ 0
+Vdd
+Wire Wire Line
+	7450 2650 7600 2650
+Connection ~ 7600 2650
+Wire Wire Line
+	6400 4350 6900 4350
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60EF4ACF
+P 6900 4350
+F 0 "#FLG01" H 6900 4425 50  0001 C CNN
+F 1 "PWR_FLAG" H 6900 4523 50  0000 C CNN
+F 2 "" H 6900 4350 50  0001 C CNN
+F 3 "~" H 6900 4350 50  0001 C CNN
+	1    6900 4350
+	-1   0    0    1   
+$EndComp
+Connection ~ 6900 4350
+Wire Wire Line
+	6900 4350 7100 4350
+Wire Wire Line
+	6850 4200 8550 4200
+Wire Wire Line
+	8550 4200 8550 3250
+Wire Wire Line
+	8550 3250 8200 3250
+Wire Wire Line
+	6850 2900 6850 4200
+Wire Wire Line
+	5350 4200 6550 4200
+Wire Wire Line
+	6550 4200 6550 3350
+Wire Wire Line
+	6550 3350 7000 3350
+Wire Wire Line
+	6700 3300 6700 3250
+Wire Wire Line
+	6700 3250 7000 3250
 $EndSCHEMATC
