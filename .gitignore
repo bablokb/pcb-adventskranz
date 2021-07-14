@@ -4,6 +4,7 @@
 adventskranz.kicad/adventskranz.xml
 *.gbr
 *.drl
+*.zip
 
 # Temporary files
 *.000
