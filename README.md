@@ -23,7 +23,12 @@ Schaltung und Layout
 Grünzeug aus dem 3D-Drucker
 ---------------------------
 
-Als "Zubehör" gibt es einen Kranz aus dem 3D-Drucker.
+Als "Zubehör" gibt es einen Kranz aus dem 3D-Drucker (Datei
+`pcb-adventskranz.stl`).
 
-(zumindest in der Zukunft, das ist Work-in-Progress).
+![](kranz-3d.png)
 
+Quelle: <https://www.tinkercad.com/things/6teYZAPliXV>
+
+(Remix aus:
+<https://www.tinkercad.com/things/dioOVePNGom-adventskranz-wreath-terrific-hango-lappi>
