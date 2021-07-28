@@ -32,3 +32,12 @@ Quelle: <https://www.tinkercad.com/things/6teYZAPliXV>
 
 (Remix aus:
 <https://www.tinkercad.com/things/dioOVePNGom-adventskranz-wreath-terrific-hango-lappi>
+
+
+Firmware
+--------
+
+Die Firmware befindet sich im Verzeichnis `firmware`, die Quellen im
+Verzeichnis `firmware/src`. Für die Erstellung der Hex-Datei ist entweder
+der SDCC, oder der xc8 sowie die PIC-Toolchain aus
+<https://github.com/bablokb/pic-toolchain> notwendig.
