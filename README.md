@@ -31,3 +31,12 @@ Quelle: <https://www.tinkercad.com/things/6teYZAPliXV>
 
 (Remix aus:
 <https://www.tinkercad.com/things/dioOVePNGom-adventskranz-wreath-terrific-hango-lappi>
+
+
+Flamme aus dem 3D-Drucker
+-------------------------
+
+In transparentem PLA gedruckt, macht sich eine "Flamme" auf der LED
+sehr schön (Datei `Flamme_5.1mm.stl`). Das ist eine für 5mm-LEDs passend
+skalierte Version von
+<https://www.prusaprinters.org/prints/21546-candle-flame-for-vase-mode>.
