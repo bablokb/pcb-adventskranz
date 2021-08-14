@@ -16,7 +16,7 @@ w = 0.86;     // Wände
 p = 1.6;      // Stärke Platine
 f = 2.0;      // Größe Fase
 h = 10.0;     // Höhe
-d = 0.05;     // delta für Radius
+d = 0.00;     // delta für Radius
 r = 35.0;     // Radius
 a = 8;        // Ausschnitt
 
