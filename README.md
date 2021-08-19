@@ -25,7 +25,7 @@ Grünzeug aus dem 3D-Drucker
 Als "Zubehör" gibt es einen Kranz aus dem 3D-Drucker (Datei
 `pcb-adventskranz.stl`).
 
-![](kranz-3d.png)
+![](adventskranz.jpg)
 
 Quelle: <https://www.tinkercad.com/things/6teYZAPliXV>
 
